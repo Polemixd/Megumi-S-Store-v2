@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megumi's Store - Carrusel de Secciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Megumi's Store!</h1>
+    </header>
+
+    <div class="carrusel">
+        <!-- Sección 1: Términos y Condiciones -->
+        <section class="seccion">
+            <h2>Términos y Condiciones de Compra!</h2>
+            <p class="description">Términos y Condiciones de la tienda!</p>
+            <button class="button" onclick="toggleSection('section1')">Mostrar/ocultar</button>
+            <div id="section1" class="hidden">
+                <p>
+                    Términos y Condiciones (T0S)
+                    Bienvenido a Megumi´s｜St0re. Estos términos y condiciones regulan el uso de nuestros servicios y la compra de nuestros productos.
+                    <!-- Resto del texto de términos y condiciones -->
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección 2: Discord -->
+        <section class="seccion">
+            <h2>Nuestro Discord!</h2>
+            <div class="form-container">
+                Si estás interesado en comprar, únete a nuestro Discord para más información: 
+                <a href="https://discord.gg/xzPr6qVeDF" target="_blank">https://discord.gg/xzPr6qVeDF</a>
+            </div>
+        </section>
+
+        <!-- Sección 3: Productos -->
+        <section class="seccion">
+            <h2>Algunos de Nuestros Productos!</h2>
+            <button class="button" onclick="toggleSection('faq1')">Minecraft Premium!</button>
+            <div id="faq1" class="hidden">
+                <div class="image-container">
+                    <p>¡Puedes comprar Minecraft Premium al mejor precio del mercado!</p>
+                    <img src="https://media.discordapp.net/attachments/1303955492846174249/1316511886724042772/latest.png?ex=67df26bd&is=67ddd53d&hm=4aa6e0d6ce5bc3c92dced8226cfb5d2b5f9fdd0f84fc7acfa7579b2a0ccbd238&=&format=webp&quality=lossless&width=589&height=589" alt="Minecraft Premium">
+                </div>
+            </div>
+
+            <button class="button" onclick="toggleSection('faq2')">Discord Nitro!</button>
+            <div id="faq2" class="hidden">
+                <div class="image-container">
+                    <p>¡Poseemos Discord Nitro al mejor precio del mercado!</p>
+                    <img src="https://media.discordapp.net/attachments/1303955506284462090/1328069987017031752/images.png?ex=67df030f&is=67ddb18f&hm=20a3682b4e61576acf693d0d7db207e71bf04fd7d00d83ebb5dff9d6701b627c&=&format=webp&quality=lossless" alt="Discord Nitro">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Botones de navegación del carrusel -->
+    <div class="carrusel-navegacion">
+        <button class="nav-button" onclick="moverCarrusel(-1)">Anterior</button>
+        <button class="nav-button" onclick="moverCarrusel(1)">Siguiente</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Megumi's Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
